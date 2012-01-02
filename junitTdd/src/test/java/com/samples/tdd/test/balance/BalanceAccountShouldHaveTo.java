@@ -3,11 +3,13 @@
  */
 package com.samples.tdd.test.balance;
 
-import static org.junit.Assert.fail;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import com.samples.tdd.balance.BalanceAccount;
 
 
 /**
@@ -32,8 +34,9 @@ public class BalanceAccountShouldHaveTo {
 	}
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void beInitializedWithAZeroValue() {
+		BalanceAccount ba = new BalanceAccount();
+		assertEquals("BaanceAccount is not initialized with a Zero default value !",Double.valueOf(0.0),ba.getValue());
 	}
 
 }
