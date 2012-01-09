@@ -36,7 +36,7 @@ public class BalanceAccountShouldHaveTo {
 	@Test
 	public void beInitializedWithAZeroValue() {
 		BalanceAccount ba = new BalanceAccount();
-		assertEquals("BaanceAccount is not initialized with a Zero default value !",Double.valueOf(0.0),ba.getValue());
+		assertEquals("BalanceAccount is not initialized with a Zero default value !",Double.valueOf(0.0),ba.getValue());
 	}
 
 }
