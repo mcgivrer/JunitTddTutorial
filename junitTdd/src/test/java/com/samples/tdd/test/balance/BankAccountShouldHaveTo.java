@@ -9,15 +9,15 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.samples.tdd.balance.BalanceAccount;
+import com.samples.tdd.balance.BankAccount;
 
 
 /**
- * Test Case implementation for the BalanceAccount Entity creation.
+ * Test Case implementation for the BankAccount Entity creation.
  * @author Frédéric Delorme<frederic.delorme@gmail.com>
  *
  */
-public class BalanceAccountShouldHaveTo {
+public class BankAccountShouldHaveTo {
 
 	/**
 	 * @throws java.lang.Exception
@@ -35,8 +35,8 @@ public class BalanceAccountShouldHaveTo {
 
 	@Test
 	public void beInitializedWithAZeroValue() {
-		BalanceAccount ba = new BalanceAccount();
-		assertEquals("BalanceAccount is not initialized with a Zero default value !",Double.valueOf(0.0),ba.getValue());
+		BankAccount ba = new BankAccount();
+		assertEquals("BankAccount is not initialized with a Zero default value !",Double.valueOf(0.0),ba.getValue());
 	}
 
 }

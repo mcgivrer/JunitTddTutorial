@@ -4,26 +4,26 @@
 package com.samples.tdd.balance;
 
 /**
- * BalanceAccount Entity definition.
+ * BankAccount Entity definition.
  * @author Frédéric Delorme<frederic.delorme@gmail.com>
- * @see com.samples.tdd.test.balance.BalanceAccountShouldHaveTo
+ * @see com.samples.tdd.test.balance.BankAccountShouldHaveTo
  *
  */
-public class BalanceAccount {
+public class BankAccount {
 	/**
-	 * Value for this BalanceAccount.
+	 * Value for this BankAccount.
 	 */
 	private Double value;
 	
 	/**
 	 * Initialization of the instance with default 0.0 value.
 	 */
-	public BalanceAccount(){
+	public BankAccount(){
 		value=0.0;
 	}
 	
 	/**
-	 * Return BalanceAccount value.
+	 * Return BankAccount value.
 	 * @return
 	 */
 	public Double getValue() {
