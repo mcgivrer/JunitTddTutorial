@@ -24,6 +24,7 @@ public class BankAccountShouldHaveTo {
 	 */
 	@Before
 	public void setUp() throws Exception {
+		
 	}
 
 	/**
@@ -33,6 +34,9 @@ public class BankAccountShouldHaveTo {
 	public void tearDown() throws Exception {
 	}
 
+	/**
+	 * UC1: Verify if BankAccount is initialized with a 0.0 value.
+	 */
 	@Test
 	public void beInitializedWithAZeroValue() {
 		BankAccount ba = new BankAccount();
