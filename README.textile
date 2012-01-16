@@ -8,4 +8,4 @@ p. Please, have a look to my WIP tutorial on TDD and feel free to ask questions 
 
 Have fun.
 
-p. 2012/01/16 - *note:* A french verion for the ODT Tutorial file has just been added. 
+p. 2012/01/16 - *note:* A french version for the ODT Tutorial file has just been added. 
