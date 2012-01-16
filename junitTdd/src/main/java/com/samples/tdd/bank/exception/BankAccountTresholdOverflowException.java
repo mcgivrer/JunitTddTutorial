@@ -5,7 +5,7 @@ package com.samples.tdd.bank.exception;
 
 /**
  * Exception emitted on threshold overflow on <code>BankAccount.debit()</code> operation.
- * @author FDELORME
+ * @author Frédéric Delorme<frederic.delorme@gmail.com>
  * @see com.samples.tdd.bank.BankAccount#debit(double)
  *
  */

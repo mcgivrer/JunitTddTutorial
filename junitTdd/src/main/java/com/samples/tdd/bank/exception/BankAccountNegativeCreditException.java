@@ -5,7 +5,7 @@ package com.samples.tdd.bank.exception;
 
 /**
  * Exception thrown on Negative value input to <code>BankAccount.credit()</code> method.
- * @author FDELORME
+ * @author Frédéric Delorme<frederic.delorme@gmail.com>
  * @see com.samples.tdd.bank.BankAccount#credit(double)
  *
  */

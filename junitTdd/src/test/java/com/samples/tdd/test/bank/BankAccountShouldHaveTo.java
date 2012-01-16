@@ -17,8 +17,8 @@ import com.samples.tdd.bank.exception.BankAccountPositiveDebitException;
 import com.samples.tdd.bank.exception.BankAccountTresholdOverflowException;
 
 /**
- * Test Case implementation for the BankAccount Entity creation.
- * @author Frédéric Delorme<frederic.delorme@gmail.com>
+ * Test Case implementation for the <code>BankAccount</code> Entity creation.
+ * @author FrÃ©dÃ©ric Delorme<frederic.delorme@gmail.com>
  *
  */
 public class BankAccountShouldHaveTo {

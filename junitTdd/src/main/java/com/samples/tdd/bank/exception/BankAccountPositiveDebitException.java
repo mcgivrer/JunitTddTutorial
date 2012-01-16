@@ -5,7 +5,7 @@ package com.samples.tdd.bank.exception;
 
 /**
  * Exception thrown on Positive value input to <code>BankAccount.debit()</code> method.
- * @author FDELORME
+ * @author Frédéric Delorme<frederic.delorme@gmail.com>
  * @see com.samples.tdd.bank.BankAccount#debit(double)
  *
  */

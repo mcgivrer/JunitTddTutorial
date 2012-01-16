@@ -8,9 +8,9 @@ import com.samples.tdd.bank.exception.BankAccountPositiveDebitException;
 import com.samples.tdd.bank.exception.BankAccountTresholdOverflowException;
 
 /**
- * Bank Account implementation driven by test from BankAccountShouldHaveTo
+ * Bank Account implementation driven by test from <code>BankAccountShouldHaveTo</code>
  * @see com.samples.tdd.test.bank.BankAccountShouldHaveTo
- * @author FDELORME
+ * @author Frédéric Delorme<frederic.delorme@gmail.com>
  *
  */
 public class BankAccount {
