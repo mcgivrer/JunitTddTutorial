@@ -2,11 +2,12 @@ package com.samples.tdd.jpa.JpaDbUnit.bean;
 
 import java.util.List;
 
-import com.samples.tdd.jpa.JpaDbUnit.model.Task;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import com.samples.tdd.jpa.JpaDbUnit.model.Task;
 
 @Component("taskHome")
 public class TaskHome {
@@ -17,7 +18,7 @@ public class TaskHome {
 	private List<Task> tasks;
 
 	@Autowired
-	private TaskDaoImpl taskDao;
+	private TaskDao taskDao;
 
 	
 	public String getMessage() {
