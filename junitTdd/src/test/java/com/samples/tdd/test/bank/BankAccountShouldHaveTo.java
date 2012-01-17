@@ -46,7 +46,6 @@ public class BankAccountShouldHaveTo {
 
 	@Test
 	public void beInitializedWithAZeroValue() {
-		BankAccount ba = new BankAccount();
 		assertEquals("BankAccount is not initialized " 
 					+ "with a Zero default value !",
 					Double.valueOf(0.0),ba.getValue());
@@ -54,7 +53,6 @@ public class BankAccountShouldHaveTo {
 
 	@Test
 	public void beCreditedWithAPositiveValue(){
-		BankAccount ba = new BankAccount();
 		try{
 
 			ba.credit(1000.0);
@@ -72,7 +70,6 @@ public class BankAccountShouldHaveTo {
 	
 	@Test
 	public void beDebitedWithANegativeValue(){
-		BankAccount ba = new BankAccount();
 		try{
 			ba.setValue(1000.0);
 			ba.debit(-200.0);
@@ -89,7 +86,6 @@ public class BankAccountShouldHaveTo {
 
 	@Test
 	public void beInitializedWithAZeroThreshold(){
-		BankAccount ba = new BankAccount();
 		assertEquals("BankAccount default threshold value is not set to 0",Double.valueOf(0.0), ba.getThreshold());
 	}
 
@@ -103,14 +99,14 @@ public class BankAccountShouldHaveTo {
 	
 	@Test
 	public void beInstanciateWithADefaultValue(){
-		BankAccount ba = new BankAccount(1000.0);
+		ba = new BankAccount(1000.0);
 		assertEquals("BankAccount default value was not set to 1000.0 at instanciation time"
 				, Double.valueOf(1000.0),ba.getValue());
 	}
 
 	@Test
 	public void beThresholdOnDebitOperation(){
-		BankAccount ba = new BankAccount(1000.0);
+		ba = new BankAccount(1000.0);
 		ba.setThreshold(-500.0);
 		assertEquals("BankAccount Threshold was not set to 2000.0 bucks !", 
 						Double.valueOf(-500.0),ba.getThreshold());
@@ -129,7 +125,7 @@ public class BankAccountShouldHaveTo {
 
 	@Test
 	public void notBeThresholdOnAuthorizedDebitOperation(){
-		BankAccount ba = new BankAccount(1000.0);
+		ba = new BankAccount(1000.0);
 		try{
 			ba.debit(-200.0);
 			assertEquals("BankAccount threshold exception was not emitted !",Double.valueOf(0.0),ba.getThreshold());
