@@ -17,7 +17,7 @@ public class TaskHome {
 	private List<Task> tasks;
 
 	@Autowired
-	private TaskDao taskDao;
+	private TaskDaoImpl taskDao;
 
 	
 	public String getMessage() {
