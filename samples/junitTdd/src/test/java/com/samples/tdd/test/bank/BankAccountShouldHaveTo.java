@@ -3,7 +3,6 @@
  */
 package com.samples.tdd.test.bank;
 
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
@@ -24,7 +23,7 @@ import com.samples.tdd.bank.exception.BankAccountTresholdOverflowException;
 public class BankAccountShouldHaveTo {
 	
 	/**
-	 * BankAccount instance used throught mainly all test.
+	 * BankAccount instance used through mainly all test.
 	 */
 	private BankAccount ba;
 	
@@ -44,6 +43,13 @@ public class BankAccountShouldHaveTo {
 		
 	}
 
+	@Test
+	public void beCreatedWithAnAccountNumber(){
+		assertEquals("BankAccount is not created with a valid " +
+				"account number containing 23 characters",
+				23,ba.getAccountNumber().length());
+	}
+	
 	@Test
 	public void beInitializedWithAZeroValue() {
 		assertEquals("BankAccount is not initialized " 

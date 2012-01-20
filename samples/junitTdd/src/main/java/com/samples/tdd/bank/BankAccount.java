@@ -6,6 +6,7 @@ package com.samples.tdd.bank;
 import com.samples.tdd.bank.exception.BankAccountNegativeCreditException;
 import com.samples.tdd.bank.exception.BankAccountPositiveDebitException;
 import com.samples.tdd.bank.exception.BankAccountTresholdOverflowException;
+import com.samples.utils.RandomGenerator;
 
 /**
  * Bank Account implementation driven by test from <code>BankAccountShouldHaveTo</code>
@@ -15,13 +16,20 @@ import com.samples.tdd.bank.exception.BankAccountTresholdOverflowException;
  */
 public class BankAccount {
 	/**
+	 * Bank Account Number;
+	 */
+	private String accountNumber;
+
+	/**
 	 * Value for this BankAccount.
 	 */
 	private Double value;
+	
 	/**
 	 * BankAccount threshold value.
 	 */
 	private double threshold;
+
 	
 	/**
 	 * Initialization of the instance with default 0.0 value.
@@ -36,6 +44,7 @@ public class BankAccount {
 	private void initialize(){
 		value=0.0;
 		threshold = 0.0;
+		accountNumber=RandomGenerator.getString(23,RandomGenerator.StringGenType.NUMERIC);
 	}
 	
 	/**
@@ -108,12 +117,22 @@ public class BankAccount {
 	public Double getThreshold() {
 		return threshold;
 	}
+	
 	/**
 	 * Set the default <code>value</code> for the BankAccount.
 	 * @param d
 	 */
 	public void setValue(double value) {
 		this.value = value;
+	}
+	
+	/**
+	 * Return the Account Number.
+	 * @return
+	 */
+	public String getAccountNumber() {
+		// TODO Auto-generated method stub
+		return accountNumber;
 	}
 
 }
